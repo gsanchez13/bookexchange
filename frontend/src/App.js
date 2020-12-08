@@ -1,12 +1,12 @@
-// import { Route, Link, Switch } from 'react-router-dom';
-// import Landing from '';
+import { Route, Link, Switch } from 'react-router-dom';
+import Landing from './components/Landing';
 
 function App() {
   return (
     <div className="App">
-      hi
-      {/* <Switch>
-      </Switch> */}
+      <Switch>
+        <Route path="/" component={Landing} />
+      </Switch>
     </div>
   );
 }
