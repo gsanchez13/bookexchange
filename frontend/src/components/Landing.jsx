@@ -1,6 +1,7 @@
 const Landing = () => {
     return (
         <div>
+            Welcome to Book Exchange
         </div>
     )
 };
