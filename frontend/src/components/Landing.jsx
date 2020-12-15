@@ -30,6 +30,9 @@ const Landing = () => {
                 <span className="visually-hidden">Next</span>
                 </a>
             </div>
+            <hr className="mx-3"/>
+        <div className="container-lg mx-5 px-5">
+        </div>
         </div>
                     )
                 };
