@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 const Landing = () => {
+    const [activeSlide, setActiveSlide] = useState("");
+
     return (
         <div>
             <div className="container">
@@ -32,7 +36,7 @@ const Landing = () => {
                     </a>
                 </div>
             </div>
-            <hr className="mx-3"/>
+            <hr className="mx-3" />
             <div className="container-lg mx-5 px-5">
             </div>
         </div>
