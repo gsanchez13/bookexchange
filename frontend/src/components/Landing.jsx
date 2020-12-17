@@ -1,8 +1,13 @@
 import { useState } from 'react';
 
 const Landing = () => {
-    const [activeSlide, setActiveSlide] = useState("");
-
+    const [activeSlide, setActiveSlide] = useState(0);
+    const prevSlide = () => {
+        console.log("prev indicator clicked")
+    };
+    const nextSlide = () => {
+        console.log("next indicator clicked")
+    }
     return (
         <div>
             <div className="container">
@@ -17,7 +22,7 @@ const Landing = () => {
                     </ol>
                     <div className="carousel-inner bg-dark">
                         <div className="carousel-item active">
-                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=405&h=540&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F09%2Fhpsorcstone.jpg" className="d-block w-25 m-auto" alt="..." />
+                            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=405&h=540&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F09%2Fhpsorcstone.jpg" className="d-block w-25 m-auto" alt="Harry Potter and the Sorcerers Stone" />
                         </div>
                         <div className="carousel-item">
                             <img src="https://images-na.ssl-images-amazon.com/images/I/71ykU-RQ0nL._AC_SY741_.jpg" className="d-block w-25 m-auto" alt="..." />
@@ -28,11 +33,11 @@ const Landing = () => {
                     </div>
                     <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
+                        <span className="visually-hidden" onClick={prevSlide}>Previous</span>
                     </a>
                     <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
+                        <span className="visually-hidden" onClick={nextSlide}>Next</span>
                     </a>
                 </div>
             </div>
