@@ -2,7 +2,7 @@ const Landing = () => {
     return (
         <div>
             <div className="container">
-                <h3 className="jumbotron text-center">Welcome to Book Exchange</h3>
+                <h3 className="jumbotron text-center bg-dark text-light">Welcome to Book Exchange</h3>
             </div>
             <div className="container-sm w-70">
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
