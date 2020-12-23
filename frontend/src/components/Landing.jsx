@@ -3,7 +3,23 @@ import { useState } from 'react';
 const Landing = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const prevSlide = () => {
-        console.log("prev indicator clicked")
+        console.log("prev indicator clicked");
+        switch(activeSlide) {
+            case 0:
+                setActiveSlide(3)
+                break;
+            case 1: 
+                setActiveSlide(0)
+                break;
+            case 2:
+                setActiveSlide(1)
+                break;
+            case 3:
+                setActiveSlide(2)
+                break;
+            default:
+                setActiveSlide(activeSlide)
+        }
     };
     const nextSlide = () => {
         console.log("next indicator clicked")
@@ -16,7 +32,7 @@ const Landing = () => {
             <div className="container-sm w-70">
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                     <ol className="carousel-indicators">
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" ></li>
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
                     </ol>
