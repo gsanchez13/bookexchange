@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 const Landing = () => {
     const [activeSlide, setActiveSlide] = useState(0);
+    const [activeClass, setActiveClass] = useState("{`carousel-item active`}")
     const prevSlide = () => {
         console.log("prev indicator clicked");
         switch (activeSlide) {
@@ -65,7 +66,7 @@ const Landing = () => {
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
                     </ol>
                     <div className="carousel-inner bg-dark">
-                        <div className="carousel-item active">
+                        <div className={`carousel-item active`}>
                             <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=405&h=540&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F09%2Fhpsorcstone.jpg" className="d-block w-25 m-auto" alt="Harry Potter and the Sorcerers Stone" />
                         </div>
                         <div className="carousel-item">
