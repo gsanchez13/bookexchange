@@ -4,25 +4,53 @@ const Landing = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const prevSlide = () => {
         console.log("prev indicator clicked");
-        switch(activeSlide) {
+        switch (activeSlide) {
             case 0:
                 setActiveSlide(3)
+                console.log(activeSlide)
                 break;
-            case 1: 
+            case 1:
                 setActiveSlide(0)
+                console.log(activeSlide)
                 break;
             case 2:
                 setActiveSlide(1)
+                console.log(activeSlide)
                 break;
             case 3:
                 setActiveSlide(2)
+                console.log(activeSlide)
                 break;
             default:
                 setActiveSlide(activeSlide)
+                console.log(activeSlide)
+                break;
         }
     };
     const nextSlide = () => {
-        console.log("next indicator clicked")
+        console.log("next indicator clicked");
+        switch (activeSlide) {
+            case 0:
+                setActiveSlide(1)
+                console.log(activeSlide)
+                break;
+            case 1:
+                setActiveSlide(2)
+                console.log(activeSlide)
+                break;
+            case 2:
+                setActiveSlide(3)
+                console.log(activeSlide)
+                break;
+            case 3:
+                setActiveSlide(0)
+                console.log(activeSlide)
+                break;
+            default:
+                setActiveSlide(activeSlide)
+                console.log(activeSlide)
+                break;
+        };
     }
     return (
         <div>
