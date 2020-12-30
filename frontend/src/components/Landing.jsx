@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Landing = () => {
     const [activeSlide, setActiveSlide] = useState(0);
-    const [activeClass, setActiveClass] = useState("{`carousel-item active`}")
+    const [activeClass, setActiveClass] = useState(`${"carousel-item active"}`)
     const [inactiveClass, setInactiveClass] = useState(`${"carousel-item"}`)
     const prevSlide = () => {
         console.log("prev indicator clicked");
