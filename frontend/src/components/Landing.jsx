@@ -53,9 +53,9 @@ const Landing = () => {
             <div className="container-sm w-70">
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                     <ol className="carousel-indicators">
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" ></li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to={0} className="active" ></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to={1}></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to={3}></li>
                     </ol>
                     <div className="carousel-inner bg-dark">
                         <div className={activeClass}>
