@@ -9,23 +9,18 @@ const Landing = () => {
         switch (activeSlide) {
             case 0:
                 setActiveSlide(3)
-                console.log(activeSlide)
                 break;
             case 1:
                 setActiveSlide(0)
-                console.log(activeSlide)
                 break;
             case 2:
                 setActiveSlide(1)
-                console.log(activeSlide)
                 break;
             case 3:
                 setActiveSlide(2)
-                console.log(activeSlide)
                 break;
             default:
                 setActiveSlide(activeSlide)
-                console.log(activeSlide)
                 break;
         }
     };
@@ -34,23 +29,18 @@ const Landing = () => {
         switch (activeSlide) {
             case 0:
                 setActiveSlide(1)
-                console.log(activeSlide)
                 break;
             case 1:
                 setActiveSlide(2)
-                console.log(activeSlide)
                 break;
             case 2:
                 setActiveSlide(3)
-                console.log(activeSlide)
                 break;
             case 3:
                 setActiveSlide(0)
-                console.log(activeSlide)
                 break;
             default:
                 setActiveSlide(activeSlide)
-                console.log(activeSlide)
                 break;
         };
     };
